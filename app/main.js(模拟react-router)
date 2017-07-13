@@ -1,0 +1,39 @@
+import React from 'react'
+import {render} from 'react-dom'
+import Greeter from './Greeter'
+import Login from './account/Login'
+import '../style/normalize.scss'
+
+class App extends React.Component{
+    constructor(...args){
+        super(...args)
+        this.state = {route:window.location.hash.substr(1)}
+    }
+    componentDidMount() {
+        window.addEventListener('hashchange', () => {
+            this.setState({
+                route: window.location.hash.substr(1)
+            })
+        })
+    }
+    render(){
+        let Child
+        switch (this.state.route) {
+            case '/greeter': Child = Greeter; break;
+            case '/login': Child = Login; break;
+            default:      Child = Home;
+        }
+
+        return (
+            <div>
+                <h1>App</h1>
+                <ul>
+                    <li><a href="#/greeter">Greeter</a></li>
+                    <li><a href="#/login">Login</a></li>
+                </ul>
+                <Child/>
+            </div>
+       )
+    }
+}
+render(<App />,document.getElementById('root'))

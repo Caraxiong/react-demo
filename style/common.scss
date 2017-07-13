@@ -1,0 +1,17 @@
+body{
+    display: flex;
+}
+.account-box{
+    width: 300px;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.input-box{
+    width:80%;
+    height: 30px;
+    line-height: 30px;
+}
