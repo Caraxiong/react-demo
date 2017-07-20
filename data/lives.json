@@ -1,0 +1,134 @@
+{
+    "paging": {
+        "is_end": false,
+        "previous": "http://www.zhihu.com/api/v4/questions/20635785/related-lives?include=data%5B%2A%5D.speaker&limit=5&offset=0",
+        "is_start": true,
+        "next": "http://www.zhihu.com/api/v4/questions/20635785/related-lives?include=data%5B%2A%5D.speaker&limit=5&offset=5"
+    },
+    "data": [
+        {
+            "status": "ended",
+            "ends_at": 1497798114,
+            "ends_in": 0,
+            "conv_id": "5912e37c5c497d005848b943",
+            "created_at": 1494410109,
+            "duration": 3600,
+            "speaker": {
+                "member": {
+                    "avatar_url_template": "https://pic3.zhimg.com/5ca4927f6_{size}.jpg",
+                    "badge": [ ],
+                    "name": "林路翔",
+                    "is_advertiser": false,
+                    "url": "http://www.zhihu.com/api/v4/people/9c5a76a2c5e6c2c945201600ab92ba08",
+                    "gender": 1,
+                    "user_type": "people",
+                    "headline": "全职程序员，喜欢围棋",
+                    "avatar_url": "https://pic3.zhimg.com/5ca4927f6_is.jpg",
+                    "is_org": false,
+                    "type": "people",
+                    "url_token": "linluxiang",
+                    "id": "9c5a76a2c5e6c2c945201600ab92ba08"
+                },
+                "bio": ""
+            },
+            "starts_at": 1497787200,
+            "subject": "Web 开发如何转做游戏开发？",
+            "type": "live",
+            "id": "845697972875464704",
+            "description": "本次 Live 将从一个 Web 开发人员的角度入手，讲述如果想要转行游戏开发需要了解的知识。包括具体从前端和后端的角度去看如何学习游戏开发等。还包括一些游戏开发的最佳实践。"
+        },
+        {
+            "status": "ended",
+            "ends_at": 1484236737,
+            "ends_in": 0,
+            "conv_id": "5860e9408d6d810065f34be4",
+            "created_at": 1482746176,
+            "duration": 3600,
+            "speaker": {
+                "member": {
+                    "avatar_url_template": "https://pic3.zhimg.com/v2-302a166a9e4559fb75e0011763985da6_{size}.jpg",
+                    "badge": [ ],
+                    "name": "技术小黑屋",
+                    "is_advertiser": false,
+                    "url": "http://www.zhihu.com/api/v4/people/438091265498844aab1ec52087946b0f",
+                    "gender": 1,
+                    "user_type": "people",
+                    "headline": "<a href=\"https://link.zhihu.com/?target=http%3A//droidyue.com/\" class=\" external\" target=\"_blank\" rel=\"nofollow noreferrer\"><span class=\"invisible\">http://</span><span class=\"visible\">droidyue.com/</span><span class=\"invisible\"></span><i class=\"icon-external\"></i></a>",
+                    "avatar_url": "https://pic3.zhimg.com/v2-302a166a9e4559fb75e0011763985da6_is.jpg",
+                    "is_org": false,
+                    "type": "people",
+                    "url_token": "droidyue",
+                    "id": "438091265498844aab1ec52087946b0f"
+                },
+                "bio": ""
+            },
+            "starts_at": 1484226000,
+            "subject": "程序员如何写好一篇技术文章？",
+            "type": "live",
+            "id": "796775894273363968",
+            "description": "本次 Live 我将会带来一些关于程序员如何书写技术文章的经验和体会。在程序员的日常，码代码是最常见不过的了，但是这其中写技术文章博客的人却明显减少了很多，那么写技术文章到底有没有用，有什么用？什么是优秀的技术文章，以及如何书写好一篇篇技术文章，我将在此次 Live 中一次性进行解读分享给大家。"
+        },
+        {
+            "status": "ended",
+            "ends_at": 1492523741,
+            "ends_in": 0,
+            "conv_id": "58e764e71b69e60062b44af9",
+            "created_at": 1491559655,
+            "duration": 3600,
+            "speaker": {
+                "member": {
+                    "avatar_url_template": "https://pic2.zhimg.com/5665baf1d_{size}.jpg",
+                    "badge": [ ],
+                    "name": "范怀宇",
+                    "is_advertiser": false,
+                    "url": "http://www.zhihu.com/api/v4/people/a9a3804f2c7ca1f219daa34a94b869cd",
+                    "gender": 1,
+                    "user_type": "people",
+                    "headline": "爱创业爱生活的码农叔叔，轻芒联合创始人",
+                    "avatar_url": "https://pic2.zhimg.com/5665baf1d_is.jpg",
+                    "is_org": false,
+                    "type": "people",
+                    "url_token": "duguguiyu",
+                    "id": "a9a3804f2c7ca1f219daa34a94b869cd"
+                },
+                "bio": "轻芒联合创始人"
+            },
+            "starts_at": 1492518600,
+            "subject": "如何快速掌握新技术平台",
+            "type": "live",
+            "id": "833742304136265728",
+            "description": "本次 Live 是受斯达克学院「 StuQ 公开课」的邀请，并与「 StuQ 公开课」共同策划。当我们成为或者打算成为程序员，经常会面对这样的问题：我想学习 Andorid，该如何入手？小程序很火，想了解一下，该怎么开始？公司用了 Java + Spring 的后台框架，我要如何快速跟上？在这次 Live 中，我想和大家分享学习新技术平台的方法和心得，我会结合我学习 Android、小程序、不同后端框架的经历，来介绍快速学习新平台所需要的切入点、方法论，和相关的工具。通过这次 Live，希望能够帮助大家构建自己的方法论，提升快速学习的能力，能更从容的拥抱未来的挑战。"
+        },
+        {
+            "status": "public",
+            "ends_at": 0,
+            "ends_in": 878596,
+            "conv_id": "596859b044d9040057e51e8f",
+            "created_at": 1500010928,
+            "duration": 3600,
+            "speaker": {
+                "member": {
+                    "avatar_url_template": "https://pic2.zhimg.com/v2-576ecc5cc88c5e39f2d9c5bdeab046f9_{size}.jpg",
+                    "badge": [ ],
+                    "name": "韦玮",
+                    "is_advertiser": false,
+                    "url": "http://www.zhihu.com/api/v4/people/69ec6bfcb737965b2c6b8b874bd36cbe",
+                    "gender": 1,
+                    "user_type": "people",
+                    "headline": "企业家，资深IT领域专家/讲师/作家，畅销书《精通Python网络爬虫》作者。",
+                    "avatar_url": "https://pic2.zhimg.com/v2-576ecc5cc88c5e39f2d9c5bdeab046f9_is.jpg",
+                    "is_org": false,
+                    "type": "people",
+                    "url_token": "wei-wei-48-12",
+                    "id": "69ec6bfcb737965b2c6b8b874bd36cbe"
+                },
+                "bio": ""
+            },
+            "starts_at": 1501329600,
+            "subject": "零基础入门 Python 网络爬虫",
+            "type": "live",
+            "id": "869189512155234304",
+            "description": "网络爬虫作为数据采集的有力手段之一，越来越受到重视。本次分享主要介绍如何才能让对网络爬虫没有什么经验的朋友能够快速地入门 Python 网络爬虫，通过学习本次分享的内容，可以让你从零开始快速学会编写一些简单的 Python 网络爬虫，实现数据采集。"
+        }
+    ]
+}
