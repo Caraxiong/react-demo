@@ -1,11 +1,29 @@
 import React,{ Component } from 'react'
 import AnswerBottom from  './AnswerBottom.js'
+import Time from  './Time.js'
+import CommentsBox from  './CommentsBox.js'
 import answers from '../../data/answers.json'
 
 import './answer.scss'
 
 class Answer extends Component{
+    // static propTypes = {
+
+    // }
+    // static defaultProps = {
+
+    // }
+    constructor(props){
+        super(props)
+    }
+    componentWillMount(){
+
+    }
+    componentDidMount(){
+
+    }
     render(){
+        const { publishTime } = this.props
         let list = answers.data.map( (data) => {
             return(
                 <div key={data.id} className = "answer-box">
@@ -21,9 +39,10 @@ class Answer extends Component{
                     <div className = "answer-content">
                         <label className = "btn btn-plain">{data.voteup_count}人赞同了该回答</label>
                         <p>{data.content}</p>
-                        <time>发布于{data.created_time}</time>
+                        <Time createdTime = {data.created_time} />
                     </div>
-                    <AnswerBottom />
+                    <AnswerBottom commentData= {data.comment_count}/>
+                    <CommentsBox />
                 </div>
             )
         })
