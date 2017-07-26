@@ -1,9 +1,10 @@
 import React from 'react'
 import {render} from 'react-dom'
 import {BrowserRouter,Route, Link,Switch} from 'react-router-dom'
-import Home from './Home'
-import Login from './account/Login'
-import Register from './account/Register'
+import routes from './routes/'
+import Home from './views/Home'
+import Login from './views/Account/Login'
+import Register from './views/Account/Register'
 import '../style/normalize.scss'
 
 class App extends React.Component{
@@ -25,12 +26,4 @@ class App extends React.Component{
 }
 // Finally, we render a <Router> with some <Route>s.
 // It does all the fancy routing stuff for us.
-render((
-    <BrowserRouter>
-        <Switch>
-            <Route exact path="/" component={Home}/>
-            <Route path="/register" component={Register}/>
-            <Route path="/login" component={Login} />
-        </Switch>
-    </BrowserRouter>
-),document.getElementById('root'))
+render(routes ,document.getElementById('root'))
