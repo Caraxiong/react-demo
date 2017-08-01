@@ -1,7 +1,7 @@
 import React,{ Component } from 'react'
 import AnswerBottom from  './AnswerBottom.js'
 import Time from  './Time.js'
-import CommentsBox from  './CommentsBox.js'
+import CommentsList from  './CommentsList.js'
 import answers from '../../../data/answers.json'
 
 import './answer.scss'
@@ -42,7 +42,7 @@ class Answer extends Component{
                         <Time createdTime = {data.created_time} />
                     </div>
                     <AnswerBottom commentData= {data.comment_count}/>
-                    <CommentsBox />
+                    <CommentsList />
                 </div>
             )
         })

@@ -5,13 +5,16 @@ import './issues.scss'
 
 class IssuesList extends Component{
     render(){
+        let list = issuesData.data.map( (data) => {
+            return (
+                <Issues key={data.id} { ...data } />
+            )
+        })
         return(
             <div className = "card-right">
                 <div className = "card-right-title">相关问题</div>
                 <div className = "card-right-content">
-                    issuesData.data.map( data => (
-                        <Issues { ...data } />
-                    ))
+                   {list}
                 </div>
             </div>
         )

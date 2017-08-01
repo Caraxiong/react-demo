@@ -1,0 +1,13 @@
+.discuss-box{
+    padding: 12px 16px;
+    background: #fff;
+    border-top: 1px solid #ebeef5;
+    position: relative;
+    transition: padding-right .3s ease;
+    display:flex;
+    textarea{
+       height:36px;
+       line-height: 36px;
+       width: 90%;
+    }
+}

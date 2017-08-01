@@ -4,7 +4,7 @@ import './issues.scss'
 
 class Issues extends Component{
     static propTypes = {
-        id: React.PropTypes.string,
+        id: React.PropTypes.number,
         title: React.PropTypes.string,
         answer_count:React.PropTypes.number
     }
