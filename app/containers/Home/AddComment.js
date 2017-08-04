@@ -1,6 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import { addComment } from '../../actions/discussActions'
+import { addComment } from '../../actions/commentActions'
 
 let AddComment = ({ dispatch }) => {
     let textarea
@@ -13,7 +13,6 @@ let AddComment = ({ dispatch }) => {
                     return
                 }
                 dispatch(addComment(textarea.value))
-                console.log(textarea.value)
                 textarea.value = ''
             }}>
                 <textarea ref = {node => {

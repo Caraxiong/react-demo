@@ -1,9 +1,14 @@
 import React from 'react'
-import AddComment from '../../containers/Home/AddComment'
-import './discuss.scss'
-const Discuss = () => (
-  <div>
-    <AddComment />
-  </div>
+import PropTypes from 'prop-types'
+
+const Discuss = ( { comment } ) => (
+  <li>
+    {comment}
+  </li>
 )
+
+Discuss.propTypes = {
+  comment: PropTypes.string.isRequired
+}
+
 export default Discuss

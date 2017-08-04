@@ -1,8 +1,22 @@
 import React,{ Component } from 'react'
+import ToastContainer from '../../containers/constants/Toast'
 import './content.scss'
 
 class Content extends Component{
+    constructor(props){
+        super(props)
+        this.handleClick = this.handleClick.bind(this)
+    }
+    handleClick (e) {
+        e.preventDefault()
+        this.props.toastAction(true,"success")
+    }
+    componentWillmount(){
+        console.log(this.props)
+    }
     render(){
+        const { bool, toastText , onClick } = this.props
+
         return(
             <div className = "w flex center content-box-main">
                 <div className = "content-box">
@@ -40,7 +54,10 @@ class Content extends Component{
                         <p>1212165</p>
                     </div>
                     <a href="javascript:void(0)" className="btn mr20">关注问题</a>
-                    <a href="javascript:void(0)" className="btn btn-blue "><i></i>写回答</a>
+                    <a href="javascript:void(0)" className="btn btn-blue"><i></i>写回答</a>
+                </div>
+                <div>
+                    { bool ? <ToastContainer text = {toastText} /> : null }
                 </div>
             </div>
         )

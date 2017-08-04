@@ -1,7 +1,7 @@
 import React,{ Component } from 'react'
 import AnswerBottom from  './AnswerBottom.js'
 import Time from  './Time.js'
-import CommentsList from  './CommentsList.js'
+import DiscussAllList from  '../../containers/Home/DiscussAllList.js'
 import answers from '../../../data/answers.json'
 
 import './answer.scss'
@@ -17,10 +17,13 @@ class Answer extends Component{
         super(props)
     }
     componentWillMount(){
-
+        console.log(this.props)
     }
     componentDidMount(){
 
+    }
+    conponentWillReceiveProps(){
+        console.log(this.props)
     }
     render(){
         const { publishTime } = this.props
@@ -42,7 +45,7 @@ class Answer extends Component{
                         <Time createdTime = {data.created_time} />
                     </div>
                     <AnswerBottom commentData= {data.comment_count}/>
-                    <CommentsList />
+                    <DiscussAllList />
                 </div>
             )
         })
