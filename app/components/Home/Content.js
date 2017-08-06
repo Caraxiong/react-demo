@@ -57,6 +57,7 @@ class Content extends Component{
                     <a href="javascript:void(0)" className="btn btn-blue"><i></i>写回答</a>
                 </div>
                 <div>
+                    123
                     { bool ? <ToastContainer text = {toastText} /> : null }
                 </div>
             </div>
