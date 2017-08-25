@@ -28,7 +28,7 @@ class CommentsBox extends Component{
 			return (
 				<div key = {data.id}>
 					<div>
-						<img src={data.author.member.url}/>
+						<img src=""/>
 						<span>{data.author.member.name}</span>
 					</div>
 					<p>{data.content}</p>

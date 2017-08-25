@@ -10,7 +10,7 @@ class Comment extends Component{
         return(
             <div key = {this.props.id} className="comment-body">
                 <div className = "comment-author">
-                    <img src={this.props.author.member.url}/>
+                    <img src=""/>
                     <span>{this.props.author.member.name}</span>
                 </div>
                 <p className = "comment-content">{this.props.content}</p>

@@ -17,7 +17,7 @@ class Answer extends Component{
         super(props)
     }
     componentWillMount(){
-        console.log(this.props)
+        // console.log('answer'+this.props)
     }
     componentDidMount(){
 
@@ -32,7 +32,7 @@ class Answer extends Component{
                 <div key={data.id} className = "answer-box">
                     <div className = "answer-header">
                         <a href="javascript:void(0)">
-                            <img src={data.author.url} alt={'头像'}/>
+                            <img src="" alt={'头像'}/>
                         </a>
                         <div className = "answer-header-info">
                              <a href="javascript:void(0)">{data.author.name}</a>

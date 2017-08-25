@@ -1,16 +1,19 @@
+import {
+    SHOW_TOAST,
+    HIDE_TOAST
+} from '../constants/ActionTypes'
+
 const initState = {
-    bool: true,
-    toastText: 'dfjsadfj 个见客户赶紧回家黄金时代凤凰军事电话费王瑞儿业务自人业务热热污染陪我子都挺好国家都会尽快'
+    bool: false,
+    toastText: ''
 }
+
 const global = (state = initState, action) => {
      switch(action.type) {
-         case "TOAST_ACTION":
-               return Object.assign(state,
-                    {
-                        bool: action.bool,
-                        toastText: action.toastText
-                    }
-               )
+         case HIDE_TOAST:
+             return { ...state, ...{bool: false, toastText: '' }}
+         case SHOW_TOAST:
+             return { ...state, ...{bool: true, toastText: 'toast 弹框提示' }}
         default:
             return state
      }

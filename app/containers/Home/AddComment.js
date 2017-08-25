@@ -6,7 +6,7 @@ let AddComment = ({ dispatch }) => {
     let textarea
 
     return (
-        <div>
+        <div className="comment-textarea">
             <form onSubmit = { e => {
                 e.preventDefault()
                 if(!textarea.value.trim()){
@@ -15,10 +15,10 @@ let AddComment = ({ dispatch }) => {
                 dispatch(addComment(textarea.value))
                 textarea.value = ''
             }}>
-                <textarea ref = {node => {
+                <textarea className = "fl" ref = {node => {
                     textarea = node
                 }}></textarea>
-                <button className = "btn">评论</button>
+                <button className = "btn fl ml20">评论</button>
             </form>
         </div>
     )

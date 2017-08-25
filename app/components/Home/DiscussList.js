@@ -2,17 +2,18 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Discuss from './Discuss'
 import AddComment from '../../containers/Home/AddComment'
+import './discuss.scss'
 
 const DiscussList = ( { comments } ) => (
-    <div>
-      <ul>
+    <div className="discuss-container">
+      <div>
         {comments.map(comment =>
           <Discuss
             key={comment.id}
             {...comment}
           />
         )}
-      </ul>
+      </div>
       <AddComment />
      </div>
 )

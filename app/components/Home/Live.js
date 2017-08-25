@@ -1,6 +1,5 @@
 import React,{ Component } from 'react'
 import livesData from '../../../data/lives.json'
-import './live.scss'
 
 class Live extends Component{
     render(){
@@ -8,7 +7,7 @@ class Live extends Component{
             return (
                 <div key={data.id}>
                     <a href="javascript:void(0)">
-                        <img src={data.speaker.member.url} />{data.subject}
+                        <img src="" />{data.subject}
                     </a>
                 </div>
             )
