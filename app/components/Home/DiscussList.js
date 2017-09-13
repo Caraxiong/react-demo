@@ -15,7 +15,7 @@ const DiscussList = ( { comments } ) => (
         )}
       </div>
       <AddComment />
-     </div>
+   </div>
 )
 
 DiscussList.propTypes = {

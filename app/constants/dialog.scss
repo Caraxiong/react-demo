@@ -1,0 +1,40 @@
+.dialog{
+    background: rgba(0,0,0,0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99999999;
+    .dialog-model{
+        margin: auto;
+        width: 500px;
+        height: 600px;
+        z-index: 100000000;
+        background: #fff;
+        border-radius: 6px;
+    }
+    .dialog-header{
+        text-indent: 10px;
+        height: 30px;
+        line-height: 30px;
+        .close{
+            display: block;
+            float: right;
+            margin-right:10px;
+            width: 30px;
+            height: 26px;
+            line-height: 26px;
+            text-align: center;
+            font-style: normal;
+            font-size: 30px;
+            cursor: pointer;
+        }
+    }
+    .dialog-body{
+
+    }
+    .dialog-footer{
+
+    }
+}

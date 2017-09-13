@@ -1,6 +1,8 @@
 import React,{ Component } from 'react'
 import ToastContainer from '../../containers/constants/ToastContainer'
-import BtnContainer from '../../containers/btns/BtnContainer'
+import DialogContainer from '../../containers/constants/DialogContainer'
+import WriteAnsterBtnContainer from '../../containers/btns/WriteAnsterBtnContainer'
+import CommentBtnContainer from '../../containers/btns/CommentBtnContainer'
 import './content.scss'
 
 class Content extends Component{
@@ -36,7 +38,7 @@ class Content extends Component{
                             <a href="javascript:void(0)" className="btn btn-plain">显示全部</a>
                         </p>
                         <div className = "ques-footer">
-                            <a href="javascript:void(0)" className="btn mr20"><i></i>12条评论</a>
+                            <CommentBtnContainer />
                             <a href="javascript:void(0)" className="btn mr20"><i></i>分享</a>
                             <a href="javascript:void(0)" className="btn"><i></i>邀请回答</a>
                         </div>
@@ -52,9 +54,10 @@ class Content extends Component{
                         <p>1212165</p>
                     </div>
                     <a href="javascript:void(0)" className="btn mr20">关注问题</a>
-                    <BtnContainer />
+                    <WriteAnsterBtnContainer />
                 </div>
                 <ToastContainer />
+                <DialogContainer />
             </div>
         )
     }
